@@ -1,0 +1,17 @@
+{
+	"lang": "es-CO",
+	"name": "plantilla",
+	"short_name": "plantilla",
+	"theme_color": "#000000",
+	"background_color": "#ffffff",
+	"display": "standalone",
+	"start_url": "./",
+	"scope": "./",
+	"icons": [
+		{
+			"src": "../../libs/bl/img/icono.png",
+			"sizes": "144x144",
+			"type": "image/png"
+		}
+	]
+}

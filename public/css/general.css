@@ -1,0 +1,146 @@
+@import url('https://www.aplicativosbl.com/appbl/libs/bl/css/fonts/Conforta.css');
+
+:root{
+	--text-xl: 30px;
+    --text-lg: 25px;
+    --text-md: 16px;
+    --text-sm: 12px;
+    --text-xs: 10px;
+	--qrs-color: rgb(43, 76, 134);
+	--res-color:rgb(58, 84, 215);
+	--bl-color: rgb(45, 126, 52);
+	--fondo: #fcfcfc;
+	--light: white;
+	--dark: rgb(19, 19, 19);
+	--medium: rgb(168, 168, 168);
+	--lightmedium: #e8e8e8;
+	--darkmedium: #4a4a4a;
+	--text-light: rgb(80, 80, 80);
+	--nav-bg: #2b2f33;
+    --nav-text: white;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Conforta', Arial, Helvetica, sans-serif;
+}
+
+.text-xs{
+	font-size: var(--text-xs);
+}
+
+.mycontainer{
+	width: 100%;
+	height: 100vh;
+	padding: 1em 2em 1em 2em;
+	margin-right: auto; 
+	margin-left: auto; 
+	overflow: scroll;
+}
+.mycontainer *{
+	font-size: var(--text-sm);
+}
+table i {
+	font-size: var(--text-md) !important;
+}
+.table-responsive::-webkit-scrollbar{
+	display: block;
+	border: 1px solid var(--lightmedium);
+	border-radius: 15px;
+}
+.table-responsive::-webkit-scrollbar-thumb{
+	background-color: var(--res-color);
+	border-radius: 15px;
+}
+
+.box-show{
+	display: inherit;
+}
+.box-hide{
+	display: none;
+}
+body {
+	background-color: var(--fondo);
+	height: 100vh;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+p{
+	margin: 0;
+}
+
+.contain-principal {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+}
+.mycard {
+	font-size: var(--text-md);
+	background-color: var(--light);
+	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
+	border-radius: 1em;
+	padding: 0em;
+}
+.alert{
+	font-size: var(--text-sm);
+	padding: 15px;
+	margin: 20px 0;
+}
+.title{
+	font-weight: bolder;
+	font-size: var(--text-lg);
+	margin-top: 15px;
+}
+.title-center{
+	text-align: center;
+}
+.subtitle{
+	text-align: center;
+	font-weight: bolder;
+	font-size: var(--text-md);
+}
+.line-decoration{
+	height: 5px;
+	margin: 10px 0;
+	border-radius: 2em;
+	width: 100%;
+	background-color: var(--bl-color);
+}
+
+.form-box{
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	margin-bottom: 12px;
+}
+.form-box div{
+	padding: 0 !important;
+	display: flex;
+	flex-direction: column;
+}
+.form-box div.d-flex{
+	gap: 10px;
+}
+.form-box div input,
+.form-box div select,
+.form-box div button{
+	margin-top: auto;
+}
+
+@media (max-width: 640px) {
+    .box-show{
+		display: none !important;
+	}
+    .box-hide{
+		display: initial !important;
+	}
+}

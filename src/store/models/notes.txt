@@ -1,0 +1,14 @@
+DDD
+
+Aplicación:
+    Use Cases: Definen las acciones que un usuario puede realizar (e.g., Crear un pedido, Buscar un producto).
+Dominio:
+    Entidades: Representan los objetos principales del dominio (e.g., Usuario, Producto, Pedido).
+    Value Objects: Representan atributos de las entidades que no tienen identidad propia (e.g., Dirección, Precio).
+    Aggregates: Agrupan entidades y value objects relacionados.
+    Repositories: Abstraen el acceso a los datos.
+    Domain Services: Encapsulan la lógica de negocio que no pertenece a una entidad específica.
+Infraestructura:
+    Persistencia: Implementa los repositorios utilizando una base de datos o cualquier otro mecanismo de almacenamiento.
+    Excepciones: Maneja las excepciones del dominio.
+    Eventos: Publica y suscribe eventos del dominio.
